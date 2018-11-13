@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Shilp</string>
+    <string name="oauth_client_id">407240404706-490j66g1jd1mauaht5eu7rna6fj1ebbt.apps.googleusercontent.com</string>
+    <string name="web_client">407240404706-im0jt40cdg0b8fbpu0p1dnju2ceqpfgd.apps.googleusercontent.com</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
