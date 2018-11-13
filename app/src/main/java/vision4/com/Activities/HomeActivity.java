@@ -31,7 +31,7 @@ import vision4.com.R;
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
-    //vars
+    //variables
     GoogleSignInAccount account;
     FragmentTransaction ft;
 
@@ -47,7 +47,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        //initialize_vars
+        //initialize_variables
         init();
 
         //toolbar
