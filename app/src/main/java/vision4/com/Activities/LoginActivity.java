@@ -83,6 +83,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (requestCode == RC_SIGN_IN) {
             // The Task returned from this call is always completed, no need to attach
             // a listener.
+            Log.e(TAG, "onActivityResult" );
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
         }
