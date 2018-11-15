@@ -50,6 +50,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         //initialize_variables
         init();
 
+
         //toolbar
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(null);
