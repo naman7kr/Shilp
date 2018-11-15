@@ -49,6 +49,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_home);
         //initialize_variables
         init();
+        
 
         //toolbar
         setSupportActionBar(toolbar);
