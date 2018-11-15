@@ -34,12 +34,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
             android:text="Name: "
             android:textSize="20sp"
             />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
                 android:id="@+id/bp_item_name"
                 android:textSize="20sp"
                 android:text="Woods"
@@ -53,6 +55,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
             android:text="Price: "
             android:textSize="20sp"
 
@@ -62,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/bp_item_price"
                 android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"
                 android:text="Rs 200"
                 />
         </LinearLayout>
@@ -74,6 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rating:"
+                android:fontFamily="@font/nunito_semibold"
                 android:textSize="20sp"
                 />
             <TextView
@@ -88,6 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="255 )"
+                android:fontFamily="@font/nunito_semibold"
                 android:textSize="20sp"
                 android:id="@+id/bp_item_rating_no"
                 />
