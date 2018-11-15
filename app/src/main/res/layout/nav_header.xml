@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@drawable/background"
     android:orientation="vertical"
+    android:id="@+id/nav_header_layout"
     >
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -23,7 +24,8 @@
         android:layout_marginLeft="16dp"
         android:fontFamily="@font/nunito_semibold"
         android:textColor="@color/textWhite"
-        android:id="@+id/nav_user_name"/>
+        android:id="@+id/nav_user_name"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
