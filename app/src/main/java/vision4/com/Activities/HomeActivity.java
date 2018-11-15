@@ -52,6 +52,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         //toolbar
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(null);
 
         //set drawer
         setDrawer();
