@@ -28,6 +28,7 @@ import vision4.com.Fragments.HireFragment;
 import vision4.com.Fragments.JobOffersFragment;
 import vision4.com.Fragments.NotificationFragment;
 import vision4.com.Fragments.ProfileFragment;
+import vision4.com.Fragments.SellProductsFragment;
 import vision4.com.R;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -104,8 +105,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         nav_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!(getSupportFragmentManager().findFragmentById(R.id.home_container) instanceof HireFragment)) {
-                    ft.replace(R.id.home_container, new ProfileFragment()).commit();
+                if(!(getSupportFragmentManager().findFragmentById(R.id.home_container) instanceof ProfileFragment)) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.home_container, new ProfileFragment()).commit();
+                    DrawerLayout drawer =  findViewById(R.id.drawer_layout);
+                    drawer.closeDrawer(GravityCompat.START);
                 }
             }
         });
@@ -165,7 +168,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_sell_products:
                 if(!(f instanceof HireFragment)) {
                     ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.home_container, new HireFragment()).commit();
+                    ft.replace(R.id.home_container, new SellProductsFragment()).commit();
                 }
                 break;
         }
