@@ -2,27 +2,42 @@ package vision4.com.Modals;
 
 public class ProductInformation {
     private String p_name;
-    private String p_price;
+    private int p_price;
     private String p_desc;
     private float p_rat;
     private int p_rat_no;
-    private String contact_no;
+    private String seller_contact_no;
     private String type;
-
-    public String getContact_no() {
-        return contact_no;
-    }
+    private String seller_name;
+    private String seller_email;
+    private int qty;
 
     public String getType() {
         return type;
+    }
+
+    public String getSeller_contact_no() {
+        return seller_contact_no;
+    }
+
+    public String getSeller_name() {
+        return seller_name;
+    }
+
+    public String getSeller_email() {
+        return seller_email;
     }
 
     public String getP_name() {
         return p_name;
     }
 
-    public String getP_price() {
+    public int getP_price() {
         return p_price;
+    }
+
+    public int getQty() {
+        return qty;
     }
 
     public String getP_desc() {
@@ -41,9 +56,7 @@ public class ProductInformation {
         this.p_name = p_name;
     }
 
-    public void setP_price(String p_price) {
-        this.p_price = p_price;
-    }
+
 
     public void setP_desc(String p_desc) {
         this.p_desc = p_desc;
@@ -57,11 +70,28 @@ public class ProductInformation {
         this.p_rat_no = p_rat_no;
     }
 
-    public void setContact_no(String contact_no) {
-        this.contact_no = contact_no;
-    }
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public void setSeller_contact_no(String seller_contact_no) {
+        this.seller_contact_no = seller_contact_no;
+    }
+
+    public void setSeller_name(String seller_name) {
+        this.seller_name = seller_name;
+    }
+
+    public void setSeller_email(String seller_email) {
+        this.seller_email = seller_email;
+    }
+
+    public void setP_price(int p_price) {
+        this.p_price = p_price;
+    }
+
+    public void setQty(int qty) {
+        this.qty = qty;
     }
 }
