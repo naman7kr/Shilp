@@ -106,10 +106,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 if(!(getSupportFragmentManager().findFragmentById(R.id.home_container) instanceof ProfileFragment)) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.home_container, new ProfileFragment()).commit();
-                    DrawerLayout drawer =  findViewById(R.id.drawer_layout);
-                    drawer.closeDrawer(GravityCompat.START);
+                    ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.home_container, new ProfileFragment()).commit();
                 }
+                DrawerLayout drawer =  findViewById(R.id.drawer_layout);
+                drawer.closeDrawer(GravityCompat.START);
             }
         });
     }
@@ -166,7 +167,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 }
                 break;
             case R.id.nav_sell_products:
-                if(!(f instanceof HireFragment)) {
+                if(!(f instanceof SellProductsFragment)) {
                     ft = getSupportFragmentManager().beginTransaction();
                     ft.replace(R.id.home_container, new SellProductsFragment()).commit();
                 }
