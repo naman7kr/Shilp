@@ -236,7 +236,6 @@ public class SellProductsFragment extends Fragment implements View.OnClickListen
         e.setEnabled(true);
         e.setCursorVisible(true);
         e.setFocusableInTouchMode(true);
-        e.setInputType(InputType.TYPE_CLASS_TEXT);
         e.requestFocus();
     }
     private void removeErrors(){

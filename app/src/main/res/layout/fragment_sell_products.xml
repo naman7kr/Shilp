@@ -156,7 +156,7 @@
         android:id="@+id/sell_qty_err"
         />
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="370dp"
         android:layout_height="310dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
@@ -167,17 +167,17 @@
         >
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_rectangle"
             android:hint="Enter Price of Product"
             android:textSize="20sp"
             android:paddingLeft="35dp"
+            android:ems="10"
             android:id="@+id/sell_product_desc"
             android:layout_marginTop="6dp"
-            android:maxLines="100"
             android:inputType="textMultiLine"
-            android:maxWidth="@dimen/nav_header_height"
+            android:lines="5"
             />
         <ImageView
             android:layout_width="26dp"
