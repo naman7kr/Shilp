@@ -1,5 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#E9EFFB">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        >
 
-</RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_rectangle"
+        android:hint="Enter Product Name"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:paddingLeft="35dp"
+        android:id="@+id/sell_product_name"
+        />
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_edit"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="3dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/sell_e_name"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This field cannot be empty"
+        android:textColor="#a70500"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:id="@+id/sell_name_err"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_rectangle"
+            android:hint="Enter Price of Product"
+            android:textSize="20sp"
+            android:paddingLeft="35dp"
+            android:id="@+id/sell_product_price"
+            />
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_edit"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="3dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/sell_e_price"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This field cannot be empty"
+        android:textColor="#a70500"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:id="@+id/sell_price_err"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_rectangle"
+            android:hint="Enter Category of Product"
+            android:textSize="20sp"
+            android:paddingLeft="35dp"
+            android:id="@+id/sell_product_category"
+            />
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_edit"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="3dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/sell_e_category"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This field cannot be empty"
+        android:textColor="#a70500"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:id="@+id/sell_category_err"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_rectangle"
+            android:hint="Enter Quantity of Product"
+            android:textSize="20sp"
+            android:paddingLeft="35dp"
+            android:id="@+id/sell_product_qty"
+            />
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_edit"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="3dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/sell_e_qty"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This field cannot be empty"
+        android:textColor="#a70500"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:id="@+id/sell_qty_err"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_rectangle"
+            android:hint="Enter Price of Product"
+            android:textSize="20sp"
+            android:paddingLeft="35dp"
+            android:id="@+id/sell_product_desc"
+            android:layout_marginTop="6dp"
+            android:maxLines="100"
+            android:inputType="textMultiLine"
+            android:maxWidth="@dimen/nav_header_height"
+            />
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_edit"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/sell_e_desc"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This field cannot be empty"
+        android:textColor="#a70500"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:id="@+id/sell_desc_err"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Add Image"
+        android:id="@+id/sell_add_img"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Image Selected"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/sell_img_name"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="#1c9e05"
+        android:textColor="#fff"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/sell_submit_button"
+        />
+</LinearLayout>
+</ScrollView>

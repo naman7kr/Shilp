@@ -119,6 +119,7 @@
         android:textSize="20sp"
         android:layout_marginLeft="20dp"
         android:id="@+id/pd_item_description"
+        android:layout_marginRight="20dp"
         />
     <TextView
         android:layout_width="match_parent"
