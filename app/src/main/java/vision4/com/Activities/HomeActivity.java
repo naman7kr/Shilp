@@ -11,6 +11,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -48,7 +49,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private Toolbar toolbar;
     private LinearLayout nav_layout;
 
-
+    //constants
+    private static final String TAG = "HomeActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -167,6 +169,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 }
                 break;
             case R.id.nav_sell_products:
+                Log.e(TAG, "onNavigationItemSelected: "+ (f instanceof SellProductsFragment) );
                 if(!(f instanceof SellProductsFragment)) {
                     ft = getSupportFragmentManager().beginTransaction();
                     ft.replace(R.id.home_container, new SellProductsFragment()).commit();
