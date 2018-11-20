@@ -2,7 +2,7 @@ package vision4.com.Modals;
 
 public class ProductInformation {
     private String p_name;
-    private int p_price;
+    private float p_price;
     private String p_desc;
     private float p_rat;
     private int p_rat_no;
@@ -32,7 +32,7 @@ public class ProductInformation {
         return p_name;
     }
 
-    public int getP_price() {
+    public float getP_price() {
         return p_price;
     }
 
@@ -87,7 +87,7 @@ public class ProductInformation {
         this.seller_email = seller_email;
     }
 
-    public void setP_price(int p_price) {
+    public void setP_price(float p_price) {
         this.p_price = p_price;
     }
 
