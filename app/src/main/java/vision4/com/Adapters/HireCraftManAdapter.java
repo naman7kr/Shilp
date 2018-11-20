@@ -1,4 +1,4 @@
-package vision4.com.Adapter;
+package vision4.com.Adapters;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;

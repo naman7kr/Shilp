@@ -20,13 +20,18 @@
             android:id="@+id/nav_sell_products"
             />
         <item
-            android:title="Offer Jobs"
-            android:id="@+id/nav_job_offers"
-            />
-        <item
-            android:title="Request Jobs"
+            android:title="Hire"
             android:id="@+id/nav_hire"
             />
+        <item
+            android:title="Search Jobs"
+            android:id="@+id/nav_search_jobs"
+            />
+        <item
+            android:title="Adds"
+            android:id="@+id/nav_adds"
+            />
+
     </group>
     <item android:title="Others">
         <menu>

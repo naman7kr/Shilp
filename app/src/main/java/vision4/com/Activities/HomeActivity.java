@@ -1,7 +1,5 @@
 package vision4.com.Activities;
 
-import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -22,11 +20,12 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import vision4.com.Fragments.AddsFragment;
 import vision4.com.Fragments.BuyProductsFragment;
 import vision4.com.Fragments.CategoriesFragment;
 import vision4.com.Fragments.FeedsFragment;
-import vision4.com.Fragments.HireFragment;
-import vision4.com.Fragments.JobOffersFragment;
+import vision4.com.Fragments.SearchJobsFragment;
+import vision4.com.Fragments.HireJobsFragment;
 import vision4.com.Fragments.NotificationFragment;
 import vision4.com.Fragments.ProfileFragment;
 import vision4.com.Fragments.SellProductsFragment;
@@ -121,6 +120,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Log.e("LOL","fsf");
+        Fragment f = getSupportFragmentManager().findFragmentById(R.id.home_container);
+        if(!(f instanceof FeedsFragment)){
+            ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.home_container, new FeedsFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_feeds);
+        }
+
     }
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -134,45 +141,64 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 if(!(f instanceof FeedsFragment)) {
                     ft = getSupportFragmentManager().beginTransaction();
                     ft.replace(R.id.home_container, new FeedsFragment()).commit();
+                }else{
+                    item.setChecked(true);
                 }
-                drawer.closeDrawer(GravityCompat.START);
                 break;
             case R.id.nav_categories:
                 if(!(f instanceof CategoriesFragment)) {
                     ft = getSupportFragmentManager().beginTransaction();
                     ft.replace(R.id.home_container, new CategoriesFragment()).commit();
+                }else{
+                    item.setChecked(true);
                 }
-                drawer.closeDrawer(GravityCompat.START);
                 break;
             case R.id.nav_notification:
                 if(!(f instanceof NotificationFragment)) {
                     ft = getSupportFragmentManager().beginTransaction();
                     ft.replace(R.id.home_container, new NotificationFragment()).commit();
+                }else{
+                    item.setChecked(true);
                 }
                 break;
             case R.id.nav_buy_products:
                 if(!(f instanceof BuyProductsFragment)) {
                     ft = getSupportFragmentManager().beginTransaction();
                     ft.replace(R.id.home_container, new BuyProductsFragment()).commit();
-                }
-                break;
-            case R.id.nav_job_offers:
-                if(!(f instanceof JobOffersFragment)) {
-                    ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.home_container, new JobOffersFragment()).commit();
+                }else{
+                    item.setChecked(true);
                 }
                 break;
             case R.id.nav_hire:
-                if(!(f instanceof HireFragment)) {
+                if(!(f instanceof HireJobsFragment)) {
                     ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.home_container, new HireFragment()).commit();
+                    ft.replace(R.id.home_container, new HireJobsFragment()).commit();
+                }else{
+                    item.setChecked(true);
+                }
+                break;
+            case R.id.nav_search_jobs:
+                if(!(f instanceof SearchJobsFragment)) {
+                    ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.home_container, new SearchJobsFragment()).commit();
+                }else{
+                    item.setChecked(true);
                 }
                 break;
             case R.id.nav_sell_products:
-                Log.e(TAG, "onNavigationItemSelected: "+ (f instanceof SellProductsFragment) );
                 if(!(f instanceof SellProductsFragment)) {
                     ft = getSupportFragmentManager().beginTransaction();
                     ft.replace(R.id.home_container, new SellProductsFragment()).commit();
+                }else{
+                    item.setChecked(true);
+                }
+                break;
+            case R.id.nav_adds:
+                if(!(f instanceof AddsFragment)) {
+                    ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.home_container, new AddsFragment()).commit();
+                }else{
+                    item.setChecked(true);
                 }
                 break;
         }
