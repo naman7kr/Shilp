@@ -15,7 +15,7 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
-import vision4.com.Adapter.HireCraftManAdapter;
+import vision4.com.Adapters.HireCraftManAdapter;
 import vision4.com.Modals.HireCraftManModal;
 import vision4.com.R;
 
