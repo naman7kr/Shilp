@@ -19,7 +19,7 @@ import vision4.com.Adapters.HireCraftManAdapter;
 import vision4.com.Modals.HireCraftManModal;
 import vision4.com.R;
 
-public class HireFragment extends Fragment {
+public class SearchJobsFragment extends Fragment {
 
     //Spinner to select the category
     private Spinner spinner;
@@ -38,7 +38,7 @@ public class HireFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_hire,container,false);
+        View view = inflater.inflate(R.layout.fragment_search_jobs,container,false);
 
         //to set the spinner list items
         setSpinnerList(view);
