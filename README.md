@@ -1,6 +1,5 @@
 # Shilp
 
-##Introduction
 
 India, a country with varied culture has always been known for its ethnic craftsmanship. It includes craft arts like pottery, basket making, embroidery etc. The importance of this sector has largely echoed from the times of independence itself and is considered an important aspect of rural development. However, this important sector has suffered large problems which can be solved by this Android Application.
 
