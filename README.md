@@ -16,7 +16,7 @@ Shilp (an Android Application) provides a platform for the rural craftsmen to sh
 
 * Android App development using Java
 * NodeJS backend
-
+* MongoDB or SQL database
 ## Contribution
 Fork this repo and start contribution. If you face any problem regarding the problem statement contact the mentors.
 
