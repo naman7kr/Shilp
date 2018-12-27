@@ -21,8 +21,9 @@ Shilp (an Android Application) provides a platform for the rural craftsmen to sh
 Fork this repo and start contribution. If you face any problem regarding the problem statement contact the mentors.
 
 ## Mentors
-  [Naman](https://github.com/naman7kr) - (Email- naman7kr@gmail.com) \n
-  [Sanay](https://github.com/Saanayy) - (Email- sanay.nitjsr@gmail.com)
+  [Naman](https://github.com/naman7kr) - (Email- naman7kr@gmail.com) 
+ 
+ [Sanay](https://github.com/Saanayy) - (Email- sanay.nitjsr@gmail.com)
 
 
 
